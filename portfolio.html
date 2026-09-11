@@ -1,91 +1,54 @@
 <!DOCTYPE html>
-<html lang="th" class="scroll-smooth">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เกี่ยวกับฉัน - Praew Portfolio</title>
+    <title>ผลงาน - Praew Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Prompt', sans-serif; background-color: #fffafb; }
-        .chinese-pattern {
-            background-image: radial-gradient(#f43f5e 0.75px, transparent 0.75px), radial-gradient(#f43f5e 0.75px, #fffafb 0.75px);
-            background-size: 30px 30px; background-position: 0 0, 15px 15px; opacity: 0.05;
-        }
+        body { font-family: 'Prompt', sans-serif; background: linear-gradient(135deg, #fff0f5 0%, #ffe4e1 50%, #e0f2fe 100%); min-height: 100vh; }
     </style>
 </head>
-<body class="text-slate-700 relative">
-    <div class="absolute inset-0 chinese-pattern pointer-events-none fixed z-0"></div>
+<body class="text-slate-700 flex flex-col min-h-screen">
 
-    <!-- Navbar -->
-    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-xs z-50 border-b border-rose-100">
-        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-rose-600 flex items-center gap-2"><span class="text-rose-500">🌸</span> Praew Portfolio</a>
-            <div class="hidden md:flex space-x-8 font-medium">
-                <a href="index.html" class="hover:text-rose-600 transition">หน้าแรก</a>
-                <a href="about.html" class="text-rose-600 font-semibold transition">เกี่ยวกับฉัน</a>
-                <a href="performance.html" class="hover:text-rose-600 transition">ผลงาน</a>
-                <a href="contact.html" class="hover:text-rose-600 transition">ติดต่อ</a>
-            </div>
-            <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b px-6 py-4 space-y-3">
-            <a href="index.html" class="block hover:text-rose-600">หน้าแรก</a>
-            <a href="about.html" class="block text-rose-600 font-semibold">เกี่ยวกับฉัน</a>
-            <a href="performance.html" class="block hover:text-rose-600">ผลงาน</a>
-            <a href="contact.html" class="block hover:text-rose-600">ติดต่อ</a>
-        </div>
-    </nav>
+    <header class="bg-white/80 backdrop-blur-md shadow-xs py-4 px-6 text-center sticky top-0 z-50 border-b border-pink-100">
+        <h1 class="text-xl font-bold text-pink-600 mb-2">🎀 PRAEW</h1>
+        <nav class="flex flex-wrap justify-center gap-4 text-sm md:text-base font-medium">
+            <a href="index.html" class="hover:text-pink-500 transition px-3 py-1">🏠 หน้าแรก</a>
+            <a href="about.html" class="hover:text-pink-500 transition px-3 py-1">💖 เกี่ยวกับฉัน</a>
+            <a href="performance.html" class="text-pink-600 font-bold bg-pink-50 px-3 py-1 rounded-full border border-pink-200">⭐ ผลงาน</a>
+            <a href="contact.html" class="hover:text-pink-500 transition px-3 py-1">💌 ติดต่อ</a>
+        </nav>
+    </header>
 
-    <!-- About Content -->
-    <section class="py-32 bg-white relative z-10 min-h-screen flex items-center">
-        <div class="max-w-6xl mx-auto px-6 w-full">
-            <div class="text-center mb-16">
-                <span class="text-rose-500 font-semibold tracking-wider uppercase text-sm">About Me</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-1 text-slate-800">เกี่ยวกับฉัน</h2>
-                <div class="w-16 h-1 bg-rose-500 mx-auto mt-3 rounded-full"></div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="relative group">
-                    <div class="absolute -inset-2 bg-gradient-to-r from-rose-400 to-pink-300 rounded-3xl blur opacity-30"></div>
-                    <div class="relative bg-rose-50 rounded-3xl overflow-hidden border border-rose-100 shadow-sm aspect-square flex items-center justify-center">
-                        <!-- เปลี่ยนลิงก์รูปโปรไฟล์ของคุณตรงนี้ -->
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Profile" class="w-full h-full object-cover">
-                    </div>
+    <main class="flex-1 max-w-4xl mx-auto px-6 py-12 text-center w-full">
+        <h2 class="text-2xl font-bold text-pink-600 mb-6">ผลงานและเกียรติบัตร 📚</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-left">
+            <div class="bg-white/80 p-5 rounded-2xl border border-pink-100 shadow-xs">
+                <div class="h-40 bg-pink-50 rounded-xl mb-3 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover">
                 </div>
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4 text-slate-800">แนะนำตัวสั้นๆ</h3>
-                    <p class="text-slate-600 leading-relaxed mb-6">
-                        สวัสดีค่ะ ชื่อแพรว เป็นนักเรียนที่ชื่นชอบการสร้างสรรค์ผลงานศิลปะ การออกแบบ กราฟิก และการพัฒนาโปรเจกต์ต่างๆ มีความตั้งใจ มุ่งมั่น และพร้อมที่จะเรียนรู้สิ่งใหม่ๆ เพื่อพัฒนาศักยภาพของตนเองอยู่เสมอค่ะ
-                    </p>
-                    <h4 class="font-semibold mb-3 text-slate-800">ทักษะความสามารถ (Skills)</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-rose-50 text-rose-700 px-3.5 py-2 rounded-xl text-sm font-medium border border-rose-100">Graphic Design</span>
-                        <span class="bg-rose-50 text-rose-700 px-3.5 py-2 rounded-xl text-sm font-medium border border-rose-100">Character Design</span>
-                        <span class="bg-rose-50 text-rose-700 px-3.5 py-2 rounded-xl text-sm font-medium border border-rose-100">HTML / CSS</span>
-                        <span class="bg-rose-50 text-rose-700 px-3.5 py-2 rounded-xl text-sm font-medium border border-rose-100">Creative Projects</span>
-                    </div>
+                <h3 class="font-bold text-slate-800">ผลงานชิ้นที่ 1</h3>
+                <p class="text-sm text-slate-500">รายละเอียดผลงานหรือเกียรติบัตรของคุณที่นี่</p>
+            </div>
+            <div class="bg-white/80 p-5 rounded-2xl border border-pink-100 shadow-xs">
+                <div class="h-40 bg-pink-50 rounded-xl mb-3 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover">
                 </div>
+                <h3 class="font-bold text-slate-800">ผลงานชิ้นที่ 2</h3>
+                <p class="text-sm text-slate-500">รายละเอียดผลงานหรือเกียรติบัตรของคุณที่นี่</p>
             </div>
         </div>
-    </section>
 
-    <footer class="bg-slate-900 text-rose-200/70 py-8 text-center text-sm relative z-10 border-t border-slate-800">
-        <p>&copy; 2026 Praew Portfolio. All rights reserved. 🌸</p>
+        <a href="contact.html" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg shadow-pink-200 transition inline-flex items-center gap-2">
+            ไปหน้าติดต่อ 💌 &rarr;
+        </a>
+    </main>
+
+    <footer class="text-center py-6 text-xs text-slate-400">
+        &copy; 2026 Praew Portfolio 🌸
     </footer>
-
-    <script>
-        const btn = document.getElementById('menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
-    </script>
-</body>
-</html>
-
-<!-- ปุ่มกดกลับหน้าแรก -->
-<a href="index.html" class="btn"> กลับหน้าแรก</a>
-</div>
 </body>
 </html>
