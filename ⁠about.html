@@ -1,51 +1,163 @@
-<!DOCTYPE html>
-<html lang="th">
+ <!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เกี่ยวกับฉัน - Praew Portfolio</title>
+    <!-- เรียกใช้งาน Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- ฟอนต์ Prompt ภาษาไทยสวยๆ -->
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Prompt', sans-serif; background: linear-gradient(135deg, #fff0f5 0%, #ffe4e1 50%, #e0f2fe 100%); min-height: 100vh; }
+        body { 
+            font-family: 'Prompt', sans-serif; 
+            background: linear-gradient(135deg, #fff0f5 0%, #e0f2fe 100%); 
+            min-height: 100vh; 
+        }
     </style>
 </head>
 <body class="text-slate-700 flex flex-col min-h-screen">
 
-    <!-- เมนูด้านบนสุด -->
-    <header class="bg-white/80 backdrop-blur-md shadow-xs py-4 px-6 text-center sticky top-0 z-50 border-b border-pink-100">
-        <h1 class="text-xl font-bold text-pink-600 mb-2">🎀 PRAEW</h1>
-        <nav class="flex flex-wrap justify-center gap-4 text-sm md:text-base font-medium">
-            <a href="index.html" class="hover:text-pink-500 transition px-3 py-1">🏠 หน้าแรก</a>
-            <a href="about.html" class="text-pink-600 font-bold bg-pink-50 px-3 py-1 rounded-full border border-pink-200">💖 เกี่ยวกับฉัน</a>
-            <a href="performance.html" class="hover:text-pink-500 transition px-3 py-1">⭐ ผลงาน</a>
-            <a href="contact.html" class="hover:text-pink-500 transition px-3 py-1">💌 ติดต่อ</a>
+    <!-- เมนูด้านบนสุด (กดสลับไปหน้าอื่นได้) -->
+    <header class="bg-white/90 backdrop-blur-md shadow-xs py-4 px-6 text-center sticky top-0 z-50 border-b border-pink-100">
+        <h1 class="text-xl font-bold text-pink-600 mb-2">🎀 PRAEW PORTFOLIO</h1>
+        <nav class="flex flex-wrap justify-center gap-3 md:gap-6 text-sm md:text-base font-medium">
+            <a href="index.html" class="hover:text-pink-500 transition px-3.5 py-1.5">🏠 หน้าแรก</a>
+            <a href="about.html" class="text-pink-600 font-bold bg-pink-50 px-3.5 py-1.5 rounded-full border border-pink-200">💖 เกี่ยวกับฉัน</a>
+            <a href="performance.html" class="hover:text-pink-500 transition px-3.5 py-1.5">⭐ ผลงาน</a>
+            <a href="contact.html" class="hover:text-pink-500 transition px-3.5 py-1.5">💌 ติดต่อ</a>
         </nav>
     </header>
 
-    <!-- เนื้อหาหลัก -->
-    <main class="flex-1 max-w-2xl mx-auto px-6 py-12 text-center w-full">
-        <div class="w-36 h-36 mx-auto rounded-full overflow-hidden border-4 border-pink-300 shadow-xl bg-white mb-6">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Praew Profile" class="w-full h-full object-cover">
+    <!-- เนื้อหาหลักหน้า About -->
+    <main class="flex-1 max-w-3xl mx-auto px-6 py-12 w-full">
+
+        <!-- 1. รูปภาพสไลต์วงกลม -->
+        <div class="flex justify-center mb-8">
+            <div class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-pink-300 shadow-xl bg-white">
+                <!-- เปลี่ยนลิงก์รูปภาพใน src="..." เป็นรูปของคุณได้เลย -->
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Praew Profile" class="w-full h-full object-cover">
+            </div>
         </div>
 
-        <h2 class="text-2xl font-bold text-pink-600 mb-4">มารู้จักกับดิฉันกันค่ะ 🙇🏻‍♀️</h2>
-        <div class="bg-white/80 p-6 rounded-3xl shadow-sm border border-pink-100 mb-8 text-slate-600 space-y-2">
-            <p class="font-semibold text-slate-800 text-lg">ดิฉันชื่อ นางสาววราลี อาจชัยสงฆ์</p>
-            <p>กำลังศึกษาอยู่ที่โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”</p>
-            <p class="text-sm bg-pink-50 text-pink-600 py-1 px-3 rounded-lg inline-block">ระดับมัธยมต้น 1-3 แผนการเรียนศิลปะ</p>
-            <p class="text-sm bg-sky-50 text-sky-600 py-1 px-3 rounded-lg inline-block">ระดับมัธยมปลาย 4-6 แผนการเรียนภาษาจีน</p>
+        <!-- 2. มารู้จักกับดิฉันกันค่ะ 🙇🏻‍♀️ (สีชมพูเข้ม) -->
+        <div class="text-center mb-6">
+            <h2 class="text-2xl md:text-3xl font-bold text-pink-700">
+                มารู้จักกับดิฉันกันค่ะ 🙇🏻‍♀️
+            </h2>
         </div>
 
-        <!-- ปุ่มไปหน้าถัดไป (ไปหน้าผลงาน) -->
-        <a href="performance.html" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg shadow-pink-200 transition inline-flex items-center gap-2">
-            ผลงานและเกียรติบัตร 📚 &rarr;
-        </a>
+        <!-- 3. ข้อมูลส่วนตัว -->
+        <div class="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-sm border border-pink-200 text-center mb-10 space-y-3">
+            <p class="text-lg md:text-xl font-semibold text-slate-800">
+                ดิฉันชื่อ นางสาววราลี อาจชัยสงฆ์
+            </p>
+            <p class="text-slate-600 text-base md:text-lg">
+                กำลังศึกษาอยู่ที่โรงเรียนบ้านบึง <span class="text-pink-600 font-medium">“อุตสาหกรรมนุเคราะห์”</span>
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-3 pt-2">
+                <span class="bg-pink-50 text-pink-700 py-2 px-4 rounded-xl text-sm font-medium border border-pink-100">
+                    ระดับมัธยมต้น 1-3 แผนการเรียนศิลปะ
+                </span>
+                <span class="bg-sky-50 text-sky-700 py-2 px-4 rounded-xl text-sm font-medium border border-sky-100">
+                    ระดับมัธยมปลาย 4-6 แผนการเรียนภาษาจีน
+                </span>
+            </div>
+        </div>
+
+        <!-- 4. หัวข้อ: 🎓 มหาลัยที่สนใจ (ทำเป็นหัวข้อให้น่าสนใจสีชมพูมีกรอบ) -->
+        <div class="mb-10">
+            <div class="border-2 border-pink-400 bg-pink-50/80 rounded-3xl p-6 md:p-8 text-center shadow-sm">
+                <h3 class="text-xl font-bold text-pink-700 mb-4 flex items-center justify-center gap-2">
+                    <span>🎓</span> มหาลัยที่สนใจ
+                </h3>
+                <div class="space-y-1 text-slate-700 font-medium text-base md:text-lg">
+                    <p class="text-slate-900 font-bold">มหาวิทยาลัยบูรพา</p>
+                    <p>คณะมนุษยศาสตร์และสังคมศาสตร์</p>
+                    <p class="text-pink-600 font-semibold pt-1">สาขาภาษาจีนเพื่อการสื่อสาร (รูปแบบที่ 1)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. หัวข้อ: 🗯️ ทักษะ (ทำเป็นหัวข้อให้น่าสนใจมีกรอบ พร้อมรูปภาพ 5 ด้าน) -->
+        <div class="mb-12">
+            <div class="border-2 border-pink-400 bg-white/90 rounded-3xl p-6 md:p-8 shadow-sm">
+                <h3 class="text-xl font-bold text-pink-700 mb-8 text-center flex items-center justify-center gap-2">
+                    <span>🗯️</span> ทักษะความสามารถ
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- ทักษะที่ 1 -->
+                    <div class="flex items-center gap-4 bg-pink-50/50 p-4 rounded-2xl border border-pink-100">
+                        <div class="w-16 h-16 rounded-full overflow-hidden bg-white border-2 border-pink-300 shrink-0 shadow-xs">
+                            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=300&q=80" alt="Singing" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 text-sm md:text-base">ด้านการร้องเพลง</h4>
+                            <p class="text-xs text-slate-500">ทักษะการแสดงออกทางดนตรี</p>
+                        </div>
+                    </div>
+
+                    <!-- ทักษะที่ 2 -->
+                    <div class="flex items-center gap-4 bg-pink-50/50 p-4 rounded-2xl border border-pink-100">
+                        <div class="w-16 h-16 rounded-full overflow-hidden bg-white border-2 border-pink-300 shrink-0 shadow-xs">
+                            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=300&q=80" alt="Leadership" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 text-sm md:text-base">ด้านการเป็นผู้นำ</h4>
+                            <p class="text-xs text-slate-500">การบริหารจัดการและทำงานร่วมกัน</p>
+                        </div>
+                    </div>
+
+                    <!-- ทักษะที่ 3 -->
+                    <div class="flex items-center gap-4 bg-pink-50/50 p-4 rounded-2xl border border-pink-100">
+                        <div class="w-16 h-16 rounded-full overflow-hidden bg-white border-2 border-pink-300 shrink-0 shadow-xs">
+                            <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=300&q=80" alt="Chinese" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 text-sm md:text-base">ด้านภาษาจีน</h4>
+                            <p class="text-xs text-slate-500">การสื่อสารและทักษะภาษา</p>
+                        </div>
+                    </div>
+
+                    <!-- ทักษะที่ 4 -->
+                    <div class="flex items-center gap-4 bg-pink-50/50 p-4 rounded-2xl border border-pink-100">
+                        <div class="w-16 h-16 rounded-full overflow-hidden bg-white border-2 border-pink-300 shrink-0 shadow-xs">
+                            <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=300&q=80" alt="First Aid" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 text-sm md:text-base">ด้านการปฐมพยาบาล</h4>
+                            <p class="text-xs text-slate-500">การช่วยเหลือเบื้องต้นและความปลอดภัย</p>
+                        </div>
+                    </div>
+
+                    <!-- ทักษะที่ 5 -->
+                    <div class="flex items-center gap-4 bg-pink-50/50 p-4 rounded-2xl border border-pink-100 md:col-span-2 md:max-w-md md:mx-auto w-full">
+                        <div class="w-16 h-16 rounded-full overflow-hidden bg-white border-2 border-pink-300 shrink-0 shadow-xs">
+                            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=300&q=80" alt="Social Skills" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 text-sm md:text-base">ด้านการเข้าสังคม</h4>
+                            <p class="text-xs text-slate-500">มนุษยสัมพันธ์และการสื่อสารกับผู้อื่น</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. ปุ่มลิงก์ไปหน้า performance.html (ผลงานและเกียรติบัตร) -->
+        <div class="text-center">
+            <a href="performance.html" class="inline-flex items-center gap-2 text-white font-semibold bg-pink-500 hover:bg-pink-600 px-8 py-4 rounded-full shadow-lg shadow-pink-200 transition">
+                ผลงานและเกียรติบัตร 📚 <span class="text-lg">&rarr;</span>
+            </a>
+        </div>
+
     </main>
 
-    <footer class="text-center py-6 text-xs text-slate-400">
-        &copy; 2026 Praew Portfolio 🌸
+    <!-- ฟุตเตอร์ -->
+    <footer class="text-center py-6 text-xs text-slate-400 border-t border-pink-100 bg-white">
+        &copy; 2026 Praew Portfolio. All rights reserved. 🌸
     </footer>
+
 </body>
 </html>
-
