@@ -1,12 +1,12 @@
  <!DOCTYPE html>
-<html lang="th" class="scroll-smooth">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เกี่ยวกับฉัน - Praew Portfolio</title>
     <!-- เรียกใช้งาน Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- ฟอนต์ Prompt ภาษาไทยสวยๆ -->
+    <!-- ฟอนต์ Prompt ภาษาไทย -->
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { 
@@ -18,7 +18,7 @@
 </head>
 <body class="text-slate-700 flex flex-col min-h-screen">
 
-    <!-- เมนูด้านบนสุด (กดสลับไปหน้าอื่นได้) -->
+    <!-- เมนูด้านบนสุด (ลิงก์แยกหน้าอิสระ) -->
     <header class="bg-white/90 backdrop-blur-md shadow-xs py-4 px-6 text-center sticky top-0 z-50 border-b border-pink-100">
         <h1 class="text-xl font-bold text-pink-600 mb-2">🎀 PRAEW PORTFOLIO</h1>
         <nav class="flex flex-wrap justify-center gap-3 md:gap-6 text-sm md:text-base font-medium">
@@ -32,10 +32,9 @@
     <!-- เนื้อหาหลักหน้า About -->
     <main class="flex-1 max-w-3xl mx-auto px-6 py-12 w-full">
 
-        <!-- 1. รูปภาพสไลต์วงกลม -->
+        <!-- 1. รูปภาพสไตล์วงกลม (รูปโปรไฟล์) -->
         <div class="flex justify-center mb-8">
             <div class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-pink-300 shadow-xl bg-white">
-                <!-- เปลี่ยนลิงก์รูปภาพใน src="..." เป็นรูปของคุณได้เลย -->
                 <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Praew Profile" class="w-full h-full object-cover">
             </div>
         </div>
@@ -48,7 +47,7 @@
         </div>
 
         <!-- 3. ข้อมูลส่วนตัว -->
-        <div class="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-sm border border-pink-200 text-center mb-10 space-y-3">
+        <div class="bg-white/95 backdrop-blur-sm p-8 rounded-3xl shadow-sm border border-pink-200 text-center mb-10 space-y-3">
             <p class="text-lg md:text-xl font-semibold text-slate-800">
                 ดิฉันชื่อ นางสาววราลี อาจชัยสงฆ์
             </p>
@@ -65,7 +64,7 @@
             </div>
         </div>
 
-        <!-- 4. หัวข้อ: 🎓 มหาลัยที่สนใจ (ทำเป็นหัวข้อให้น่าสนใจสีชมพูมีกรอบ) -->
+        <!-- 4. หัวข้อ: 🎓 มหาลัยที่สนใจ (หัวข้อสีชมพูมีกรอบ) -->
         <div class="mb-10">
             <div class="border-2 border-pink-400 bg-pink-50/80 rounded-3xl p-6 md:p-8 text-center shadow-sm">
                 <h3 class="text-xl font-bold text-pink-700 mb-4 flex items-center justify-center gap-2">
@@ -79,15 +78,15 @@
             </div>
         </div>
 
-        <!-- 5. หัวข้อ: 🗯️ ทักษะ (ทำเป็นหัวข้อให้น่าสนใจมีกรอบ พร้อมรูปภาพ 5 ด้าน) -->
+        <!-- 5. หัวข้อ: 🗯️ ทักษะ (หัวข้อมีกรอบ พร้อมรูปภาพประกอบแต่ละทักษะ) -->
         <div class="mb-12">
-            <div class="border-2 border-pink-400 bg-white/90 rounded-3xl p-6 md:p-8 shadow-sm">
+            <div class="border-2 border-pink-400 bg-white/95 rounded-3xl p-6 md:p-8 shadow-sm">
                 <h3 class="text-xl font-bold text-pink-700 mb-8 text-center flex items-center justify-center gap-2">
                     <span>🗯️</span> ทักษะความสามารถ
                 </h3>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- ทักษะที่ 1 -->
+                    <!-- ด้านการร้องเพลง -->
                     <div class="flex items-center gap-4 bg-pink-50/50 p-4 rounded-2xl border border-pink-100">
                         <div class="w-16 h-16 rounded-full overflow-hidden bg-white border-2 border-pink-300 shrink-0 shadow-xs">
                             <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=300&q=80" alt="Singing" class="w-full h-full object-cover">
@@ -98,7 +97,7 @@
                         </div>
                     </div>
 
-                    <!-- ทักษะที่ 2 -->
+                    <!-- ด้านการเป็นผู้นำ -->
                     <div class="flex items-center gap-4 bg-pink-50/50 p-4 rounded-2xl border border-pink-100">
                         <div class="w-16 h-16 rounded-full overflow-hidden bg-white border-2 border-pink-300 shrink-0 shadow-xs">
                             <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=300&q=80" alt="Leadership" class="w-full h-full object-cover">
@@ -109,7 +108,7 @@
                         </div>
                     </div>
 
-                    <!-- ทักษะที่ 3 -->
+                    <!-- ด้านภาษาจีน -->
                     <div class="flex items-center gap-4 bg-pink-50/50 p-4 rounded-2xl border border-pink-100">
                         <div class="w-16 h-16 rounded-full overflow-hidden bg-white border-2 border-pink-300 shrink-0 shadow-xs">
                             <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=300&q=80" alt="Chinese" class="w-full h-full object-cover">
@@ -120,7 +119,7 @@
                         </div>
                     </div>
 
-                    <!-- ทักษะที่ 4 -->
+                    <!-- ด้านการปฐมพยาบาล -->
                     <div class="flex items-center gap-4 bg-pink-50/50 p-4 rounded-2xl border border-pink-100">
                         <div class="w-16 h-16 rounded-full overflow-hidden bg-white border-2 border-pink-300 shrink-0 shadow-xs">
                             <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=300&q=80" alt="First Aid" class="w-full h-full object-cover">
@@ -131,7 +130,7 @@
                         </div>
                     </div>
 
-                    <!-- ทักษะที่ 5 -->
+                    <!-- ด้านการเข้าสังคม -->
                     <div class="flex items-center gap-4 bg-pink-50/50 p-4 rounded-2xl border border-pink-100 md:col-span-2 md:max-w-md md:mx-auto w-full">
                         <div class="w-16 h-16 rounded-full overflow-hidden bg-white border-2 border-pink-300 shrink-0 shadow-xs">
                             <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=300&q=80" alt="Social Skills" class="w-full h-full object-cover">
