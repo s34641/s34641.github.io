@@ -1,33 +1,89 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="th" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta viewport="width=device-width, initial-scale=1.0">
-<title>แฟ้มสะสมงานของฉัน </title>
-<style>
-body { font-family: sans-serif; background-color: #f4f7f6; text-align: center;
-padding: 30px; }
-.container { max-width: 800px; margin: 0 auto; }
-.project-card { background: white; padding: 20px; margin: 20px 0; border-radius:
-8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: left; }
-.btn { display: inline-block; background: #2c3e50; color: white; padding: 10px
-20px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกี่ยวกับฉัน - Praew Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Prompt', sans-serif; background-color: #fffafb; }
+        .chinese-pattern {
+            background-image: radial-gradient(#f43f5e 0.75px, transparent 0.75px), radial-gradient(#f43f5e 0.75px, #fffafb 0.75px);
+            background-size: 30px 30px; background-position: 0 0, 15px 15px; opacity: 0.05;
+        }
+    </style>
 </head>
-<body>
-<div class="container">
-<h1> แฟ้มสะสมงาน  (Portfolio) วราลี อาจชัยสงฆ์</h1>
-<p>นี่คือพื้นที่รวบรวมผลงานและกิจกรรมที่ภูมิใจค่ะ</p>
-<!-- กล่องผลงานชิ้นที่ 1 -->
-<div class="project-card">
-<h3>1. โครงงาน/ชิ้นงานวิทยาศาสตร์คำนวณ </h3>
-<p>รายละเอียดชนงาน ิ้ : เขียนอธิบายสั้นๆ ว่าทำอะไร ได้เรียนรู้อะไรจากงานนี้บ้าง  </p>
-</div>
-<!-- กล่องผลงานชิ้นที่ 2 -->
-<div class="project-card">
-<h3>2. กิจกรรม/เกียรติบัตรที่ได้รับ</h3>
-<p>รายละเอียดชิ้นงาน : เข้าร่วมการประกวด หรือกิจกรรมของโรงเรียน...</p>
-</div>
+<body class="text-slate-700 relative">
+    <div class="absolute inset-0 chinese-pattern pointer-events-none fixed z-0"></div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-xs z-50 border-b border-rose-100">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-rose-600 flex items-center gap-2"><span class="text-rose-500">🌸</span> Praew Portfolio</a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="index.html" class="hover:text-rose-600 transition">หน้าแรก</a>
+                <a href="about.html" class="text-rose-600 font-semibold transition">เกี่ยวกับฉัน</a>
+                <a href="performance.html" class="hover:text-rose-600 transition">ผลงาน</a>
+                <a href="contact.html" class="hover:text-rose-600 transition">ติดต่อ</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b px-6 py-4 space-y-3">
+            <a href="index.html" class="block hover:text-rose-600">หน้าแรก</a>
+            <a href="about.html" class="block text-rose-600 font-semibold">เกี่ยวกับฉัน</a>
+            <a href="performance.html" class="block hover:text-rose-600">ผลงาน</a>
+            <a href="contact.html" class="block hover:text-rose-600">ติดต่อ</a>
+        </div>
+    </nav>
+
+    <!-- About Content -->
+    <section class="py-32 bg-white relative z-10 min-h-screen flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full">
+            <div class="text-center mb-16">
+                <span class="text-rose-500 font-semibold tracking-wider uppercase text-sm">About Me</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-1 text-slate-800">เกี่ยวกับฉัน</h2>
+                <div class="w-16 h-1 bg-rose-500 mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-rose-400 to-pink-300 rounded-3xl blur opacity-30"></div>
+                    <div class="relative bg-rose-50 rounded-3xl overflow-hidden border border-rose-100 shadow-sm aspect-square flex items-center justify-center">
+                        <!-- เปลี่ยนลิงก์รูปโปรไฟล์ของคุณตรงนี้ -->
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Profile" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-slate-800">แนะนำตัวสั้นๆ</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        สวัสดีค่ะ ชื่อแพรว เป็นนักเรียนที่ชื่นชอบการสร้างสรรค์ผลงานศิลปะ การออกแบบ กราฟิก และการพัฒนาโปรเจกต์ต่างๆ มีความตั้งใจ มุ่งมั่น และพร้อมที่จะเรียนรู้สิ่งใหม่ๆ เพื่อพัฒนาศักยภาพของตนเองอยู่เสมอค่ะ
+                    </p>
+                    <h4 class="font-semibold mb-3 text-slate-800">ทักษะความสามารถ (Skills)</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-rose-50 text-rose-700 px-3.5 py-2 rounded-xl text-sm font-medium border border-rose-100">Graphic Design</span>
+                        <span class="bg-rose-50 text-rose-700 px-3.5 py-2 rounded-xl text-sm font-medium border border-rose-100">Character Design</span>
+                        <span class="bg-rose-50 text-rose-700 px-3.5 py-2 rounded-xl text-sm font-medium border border-rose-100">HTML / CSS</span>
+                        <span class="bg-rose-50 text-rose-700 px-3.5 py-2 rounded-xl text-sm font-medium border border-rose-100">Creative Projects</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-rose-200/70 py-8 text-center text-sm relative z-10 border-t border-slate-800">
+        <p>&copy; 2026 Praew Portfolio. All rights reserved. 🌸</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    </script>
+</body>
+</html>
+
 <!-- ปุ่มกดกลับหน้าแรก -->
 <a href="index.html" class="btn"> กลับหน้าแรก</a>
 </div>
