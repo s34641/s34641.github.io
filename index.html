@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก - Waralee Portfolio</title>
+    <title>หน้าแรก - Praew Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -17,45 +17,69 @@
 <body class="text-slate-700 relative">
     <div class="absolute inset-0 chinese-pattern pointer-events-none fixed z-0"></div>
 
-    <!-- Navbar (กดไปได้ทุกหน้า) -->
+    <!-- 1. โค้ดเมนูด้านบนสุด (กดไปได้ทุกหน้า) -->
     <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-xs z-50 border-b border-rose-100">
         <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
             <a href="index.html" class="text-2xl font-bold text-rose-600 flex items-center gap-2"><span class="text-rose-500">🌸</span> Praew Portfolio</a>
             <div class="hidden md:flex space-x-8 font-medium">
-                <a href="index.html" class="text-rose-600 font-semibold transition">indek.html</a>
-                <a href="about.html" class="hover:text-rose-600 transition">about.html</a>
-                <a href="performance.html" class="hover:text-rose-600 transition">performance.html</a>
-                <a href="contact.html" class="hover:text-rose-600 transition">contact.html</a>
+                <a href="index.html" class="text-rose-600 font-semibold transition">หน้าแรก</a>
+                <a href="about.html" class="hover:text-rose-600 transition">เกี่ยวกับฉัน</a>
+                <a href="performance.html" class="hover:text-rose-600 transition">ผลงาน</a>
+                <a href="contact.html" class="hover:text-rose-600 transition">ติดต่อ</a>
             </div>
             <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b px-6 py-4 space-y-3">
-            <a href="index.html" class="block text-rose-600 font-semibold">indek.html</a>
-            <a href="about.html" class="block hover:text-rose-600">about.html</a>
-            <a href="performance.html" class="block hover:text-rose-600">performance.html</a>
-            <a href="contact.html" class="block hover:text-rose-600">contact.html</a>
+            <a href="index.html" class="block text-rose-600 font-semibold">หน้าแรก</a>
+            <a href="about.html" class="block hover:text-rose-600">เกี่ยวกับฉัน</a>
+            <a href="performance.html" class="block hover:text-rose-600">ผลงาน</a>
+            <a href="contact.html" class="block hover:text-rose-600">ติดต่อ</a>
         </div>
     </nav>
 
-    <!-- Index Content -->
-    <section class="min-h-screen flex items-center justify-center bg-gradient-to-b from-rose-50/80 via-pink-50/30 to-white pt-20 relative z-10">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <span class="bg-rose-100 text-rose-700 text-sm font-medium px-4 py-1.5 rounded-full inline-block mb-4 border border-rose-200">🏮 ยินดีต้อนรับสู่แฟ้มสะสมผลงาน</span>
-            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-slate-800">สวัสดีค่ะ, ดิฉัน <span class="text-rose-600">นางสาววราลี อาจชัยสงฆ์</span></h1>
-            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-8 leading-relaxed"> นี่คือพอร์ต Portfolio ของดิฉันค่ะ รวบรวมผลงาน ความสามารถ และเรื่องราวต่างๆ ไว้ที่นี่ค่ะ 🙇🏻‍♀️</p>
-            <div class="flex justify-center gap-4">
-                <a href="performance.html" class="bg-rose-600 hover:bg-rose-700 text-white font-medium px-8 py-3.5 rounded-2xl shadow-lg shadow-rose-200 transition">ดูผลงานของฉัน</a>
-                <a href="contact.html" class="border border-rose-300 hover:border-rose-600 hover:text-rose-600 font-medium px-8 py-3.5 rounded-2xl transition bg-white/50">ติดต่อฉัน</a>
+    <!-- Content Section -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-b from-rose-50/80 via-pink-50/30 to-white pt-28 pb-16 relative z-10">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            
+            <!-- 2. ยินดีต้อนรับสู่แฟ้มสะสมผลงาน -->
+            <div class="mb-6">
+                <span class="bg-rose-100 text-rose-700 text-sm md:text-base font-medium px-5 py-2 rounded-full inline-block border border-rose-200 shadow-xs">
+                    🏮 ยินดีต้อนรับสู่แฟ้มสะสมผลงาน
+                </span>
             </div>
 
-            <!-- ปุ่มไปหน้าถัดไป -->
-            <div class="mt-16">
-                <a href="about.html" class="inline-flex items-center gap-2 text-rose-600 font-semibold hover:text-rose-700 bg-rose-50 px-6 py-3 rounded-full border border-rose-200 shadow-xs transition">
-                    ไปหน้าเกี่ยวกับฉัน <span class="text-lg">&rarr;</span>
+            <!-- 3. ที่ใส่รูปภาพ 1 รูป สไตล์วงกลม -->
+            <div class="flex justify-center mb-8">
+                <div class="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-rose-300 shadow-xl bg-rose-50">
+                    <!-- เปลี่ยนลิงก์รูปภาพใน src="..." เป็นรูปของคุณได้เลย -->
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Praew Profile" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- 4. สวัสดีค่ะ -->
+            <h1 class="text-3xl md:text-5xl font-bold text-slate-800 mb-3">
+                สวัสดีค่ะ
+            </h1>
+
+            <!-- 5. ดิฉัน นางสาววราลี อาจชัยสงฆ์ -->
+            <h2 class="text-xl md:text-2xl font-semibold text-rose-600 mb-4">
+                ดิฉัน นางสาววราลี อาจชัยสงฆ์
+            </h2>
+
+            <!-- 6. นี่คือพอร์ต Portfolio ของดิฉันค่ะ รวบรวมผลงาน ความสามารถ และเรื่องราวต่างๆ ไว้ที่นี่ค่ะ 🙇🏻‍♀️ -->
+            <p class="text-base md:text-lg text-slate-600 max-w-xl mx-auto mb-10 leading-relaxed">
+                นี่คือพอร์ต Portfolio ของดิฉันค่ะ รวบรวมผลงาน ความสามารถ และเรื่องราวต่างๆ ไว้ที่นี่ค่ะ 🙇🏻‍♀️
+            </p>
+
+            <!-- 7. โค้ดให้ไป about -->
+            <div>
+                <a href="about.html" class="inline-flex items-center gap-2 text-rose-600 font-semibold hover:text-rose-700 bg-white px-8 py-3.5 rounded-full border border-rose-300 shadow-md hover:bg-rose-50 transition">
+                    ไปหน้าเกี่ยวกับฉัน (About) <span class="text-lg">&rarr;</span>
                 </a>
             </div>
+
         </div>
     </section>
 
