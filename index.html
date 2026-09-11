@@ -1,111 +1,59 @@
  <!DOCTYPE html>
-<html lang="th" class="scroll-smooth">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praew Portfolio</title>
+    <title>หน้าแรก - Praew Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { 
-            font-family: 'Prompt', sans-serif; 
-            background: linear-gradient(180deg, #fff0f3 0%, #fffbf0 50%, #f0f7ff 100%); 
-            min-height: 100vh; 
-        }
+        body { font-family: 'Prompt', sans-serif; background: linear-gradient(135deg, #fff0f5 0%, #ffe4e1 50%, #e0f2fe 100%); min-height: 100vh; }
     </style>
 </head>
 <body class="text-slate-700 flex flex-col min-h-screen">
 
-    <!-- เมนูด้านบนสุด (กดแล้วเลื่อนไปแต่ละหัวข้อทันที) -->
-    <header class="bg-white/80 backdrop-blur-md shadow-xs py-4 px-4 text-center sticky top-0 z-50 border-b border-pink-100">
-        <h1 class="text-xl font-bold text-pink-600 mb-2">🎀 PRAEW</h1>
-        <nav class="flex flex-wrap justify-center gap-2 md:gap-4 text-sm font-medium">
-            <a href="#home" class="bg-pink-50 text-pink-600 font-bold px-3 py-1 rounded-full border border-pink-200">🏠 หน้าแรก</a>
-            <a href="#about" class="hover:text-pink-500 transition px-3 py-1">💖 เกี่ยวกับฉัน</a>
-            <a href="#performance" class="hover:text-pink-500 transition px-3 py-1">⭐ ผลงาน</a>
-            <a href="#contact" class="hover:text-pink-500 transition px-3 py-1">💌 ติดต่อ</a>
+    <!-- บรรทัดแรก: โค้ดที่ไปหน้าทุกๆ หน้าได้ -->
+    <header class="bg-white/90 backdrop-blur-md shadow-xs py-4 px-6 text-center sticky top-0 z-50 border-b border-pink-100">
+        <nav class="flex flex-wrap justify-center gap-3 md:gap-6 text-sm md:text-base font-medium">
+            <a href="index.html" class="text-pink-600 font-bold bg-pink-50 px-3.5 py-1.5 rounded-full border border-pink-200">หน้าแรก</a>
+            <a href="about.html" class="hover:text-pink-500 transition px-3.5 py-1.5">เกี่ยวกับฉัน</a>
+            <a href="performance.html" class="hover:text-pink-500 transition px-3.5 py-1.5">ผลงาน</a>
+            <a href="contact.html" class="hover:text-pink-500 transition px-3.5 py-1.5">ติดต่อ</a>
         </nav>
     </header>
 
-    <!-- ส่วนที่ 1: หน้าแรก (Home) -->
-    <section id="home" class="min-h-[85vh] flex flex-col items-center justify-center px-6 py-12 text-center">
-        <!-- รูปภาพโปรไฟล์ทรงกลม -->
-        <div class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white mb-6">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Profile" class="w-full h-full object-cover">
+    <!-- เนื้อหาหลักหน้าแรก -->
+    <main class="flex-1 flex flex-col items-center justify-center px-6 py-12 text-center">
+        
+        <!-- บรรทัดต่อมา: 🏮 ยินดีต้อนรับสู่แฟ้มสะสมผลงาน เป็นที่ใส่รูปภาพ 1 รูป สไตล์วงกลม -->
+        <h2 class="text-xl md:text-2xl font-bold text-pink-600 mb-6">🏮 ยินดีต้อนรับสู่แฟ้มสะสมผลงาน</h2>
+        
+        <div class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-pink-300 shadow-xl bg-white mb-6">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Praew Profile" class="w-full h-full object-cover">
         </div>
 
-        <p class="text-xs md:text-sm font-semibold tracking-widest text-pink-400 uppercase mb-2">✨ WELCOME TO MY WORLD ✨</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-2">สวัสดีค่ะ 👋</h2>
-        <h3 class="text-xl font-semibold text-pink-600 mb-4">นางสาววราลี อาจชัยสงฆ์</h3>
+        <!-- บรรทัดต่อมา: สวัสดีค่ะ -->
+        <h3 class="text-2xl md:text-3xl font-bold text-slate-800 mb-2">สวัสดีค่ะ</h3>
+
+        <!-- บรรทัดต่อมา: ดิฉัน นางสาววราลี อาจชัยสงฆ์ -->
+        <p class="text-lg md:text-xl font-semibold text-pink-600 mb-2">ดิฉัน นางสาววราลี อาจชัยสงฆ์</p>
+
+        <!-- บรรทัดต่อมา: นี่คือพอร์ต Portfolio ของดิฉันค่ะ รวบรวมผลงาน ความสามารถ และเรื่องราวต่างๆ ไว้ที่นี่ค่ะ 🙇🏻‍♀️ -->
         <p class="text-slate-600 max-w-md text-sm md:text-base mb-8">
             นี่คือพอร์ต Portfolio ของดิฉันค่ะ รวบรวมผลงาน ความสามารถ และเรื่องราวต่างๆ ไว้ที่นี่ค่ะ 🙇🏻‍♀️
         </p>
 
-        <!-- ปุ่มกดเลื่อนไปหน้าเกี่ยวกับฉัน -->
-        <a href="#about" class="bg-pink-400 hover:bg-pink-500 text-white font-semibold px-8 py-3 rounded-full shadow-lg shadow-pink-200 transition inline-flex items-center gap-2">
-            💖 ทำความรู้จักเพิ่มเติม &darr;
-        </a>
-    </section>
+        <!-- บรรทัดต่อมา: เป็นโค้ดให้ไป about -->
+        <div>
+            <a href="about.html" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg shadow-pink-200 transition inline-flex items-center gap-2">
+                ไปยังหน้าเกี่ยวกับฉัน &rarr;
+            </a>
+        </div>
 
-    <!-- ส่วนที่ 2: เกี่ยวกับฉัน (About) -->
-    <section id="about" class="min-h-[80vh] flex flex-col items-center justify-center px-6 py-16 text-center bg-white/50 border-t border-pink-100">
-        <div class="max-w-2xl w-full">
-            <h2 class="text-2xl md:text-3xl font-bold text-pink-600 mb-6">มารู้จักกับดิฉันกันค่ะ 🙇🏻‍♀️</h2>
-            <div class="bg-white p-8 rounded-3xl shadow-sm border border-pink-100 space-y-4 text-slate-600">
-                <p class="font-semibold text-slate-800 text-lg">นางสาววราลี อาจชัยสงฆ์</p>
-                <p>เป็นคนร่าเริง ตั้งใจทำงาน และมีความมุ่งมั่นในสิ่งที่รัก พร้อมเรียนรู้สิ่งใหม่ๆ เสมอ</p>
-            </div>
-        </div>
-        <div class="mt-8">
-            <a href="#performance" class="text-pink-500 font-semibold text-sm hover:underline">ถัดไป: ผลงาน &darr;</a>
-        </div>
-    </section>
+    </main>
 
-    <!-- ส่วนที่ 3: ผลงาน (Performance) -->
-    <section id="performance" class="min-h-[80vh] flex flex-col items-center justify-center px-6 py-16 text-center border-t border-pink-100">
-        <div class="max-w-4xl w-full">
-            <h2 class="text-2xl md:text-3xl font-bold text-pink-600 mb-6">⭐ ผลงานและเกียรติบัตร</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                <div class="bg-white p-5 rounded-2xl border border-pink-100 shadow-xs">
-                    <div class="h-40 bg-pink-50 rounded-xl mb-3 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bold text-slate-800">ผลงานชิ้นที่ 1</h3>
-                    <p class="text-sm text-slate-500">รายละเอียดผลงานของคุณ</p>
-                </div>
-                <div class="bg-white p-5 rounded-2xl border border-pink-100 shadow-xs">
-                    <div class="h-40 bg-pink-50 rounded-xl mb-3 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bold text-slate-800">ผลงานชิ้นที่ 2</h3>
-                    <p class="text-sm text-slate-500">รายละเอียดผลงานของคุณ</p>
-                </div>
-            </div>
-        </div>
-        <div class="mt-8">
-            <a href="#contact" class="text-pink-500 font-semibold text-sm hover:underline">ถัดไป: ติดต่อ &darr;</a>
-        </div>
-    </section>
-
-    <!-- ส่วนที่ 4: ติดต่อ (Contact) -->
-    <section id="contact" class="min-h-[70vh] flex flex-col items-center justify-center px-6 py-16 text-center bg-white/50 border-t border-pink-100">
-        <div class="max-w-xl w-full">
-            <h2 class="text-2xl md:text-3xl font-bold text-pink-600 mb-6">💌 ช่องทางการติดต่อ</h2>
-            <div class="bg-white p-8 rounded-3xl shadow-sm border border-pink-100 space-y-3 text-slate-600">
-                <p>📧 Email: praew@example.com</p>
-                <p>📞 Phone: 0xx-xxx-xxxx</p>
-                <p>💬 Line / IG: @praew_portfolio</p>
-            </div>
-        </div>
-        <div class="mt-8">
-            <a href="#home" class="text-pink-500 font-semibold text-sm hover:underline">&uarr; กลับสู่ด้านบนสุด</a>
-        </div>
-    </section>
-
-    <!-- ฟุตเตอร์ -->
-    <footer class="text-center py-6 text-xs text-slate-400 border-t border-pink-100 bg-white">
+    <footer class="text-center py-6 text-xs text-slate-400 border-t border-pink-100/50">
         &copy; 2026 Praew Portfolio. All rights reserved. 🌸
     </footer>
-
 </body>
 </html>
